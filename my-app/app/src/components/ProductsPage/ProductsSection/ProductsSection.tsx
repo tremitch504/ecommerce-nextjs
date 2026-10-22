@@ -39,7 +39,7 @@ export default function ProductsSection() {
     </div>
     <div className="price-checkbox-container">
  <input type="checkbox" name="" id="" />
- <h2>$50-100</h2>
+ <h2>$50-100</h2> 
     </div>
    
     {/* <div className="filter-price"></div> */}
