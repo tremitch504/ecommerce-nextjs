@@ -1,0 +1,118 @@
+.collection-promo-wrapper {
+    /* Rectangle 3 */
+
+/* position: absolute; */
+/* width: 100vw; */
+min-height: 1100px;
+width: 100%;
+/* min-height: 100%; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+ /* position: relative; */
+
+background: url('../../../../public/collectionPromoBG.png'); 
+background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+  /* width: 100%;  */
+  
+  
+  /* Replace 16 / 9 with your image's exact width / height aspect ratio */
+  /* aspect-ratio: 16 / 9;  */
+  /* 3. Center the inner text using Grid */
+  /* display: grid;
+  place-content: center;  */
+   /* background-position: center; */
+ /* aspect-ratio: 16 / 9; 
+  position: relative; */
+
+}
+
+
+.collection-promo-wrapper img {
+    width: 100%;
+  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.collection-promo-header-container {
+ min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    gap: 12px;
+     margin-top: 200px;
+
+}
+
+.collection-promo-header-container h1 {
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+/* font-size: 40px; */
+font-size: clamp(16px,4.0vw,40px);
+line-height: 48px;
+white-space: nowrap;
+color: #FFFFFF;
+}
+
+.collection-promo-title {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    /* margin-top: 60px; */
+    /* width: 460px; */
+    min-width: 100%;
+    /* background-color: aqua; */
+} 
+.collection-promo-title h1 {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+font-size: clamp(16px,2.4vw,24px);
+line-height: 29px;
+/* white-space: nowrap; */
+color: #FFFFFF;
+}
+
+.shop-now-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+box-sizing: border-box;
+width: 218px;
+height: 80.16px; 
+border: 2px solid #FFFFFF;
+border-radius: 6px;
+/* Shop Now text */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #FFFEFE;
+cursor: pointer;  
+}
+
+.shop-now-btn:hover {
+    border: 0;
+    color: #222831;
+    background-color: #FFFEFE;
+}
+
+
+

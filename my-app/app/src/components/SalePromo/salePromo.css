@@ -1,0 +1,95 @@
+.sale-promo-collection-wrapper{
+
+/* position: absolute; */
+/* width: 100vw; */
+min-height:  930px;
+/* width: 100%; */
+/* min-height: 100%; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+/* padding: 20px; */
+ /* position: relative; */
+
+background: url('../../../../public/saleCollectionBG.jpg'); 
+background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+  /* width: 100%;  */
+  
+  
+  /* Replace 16 / 9 with your image's exact width / height aspect ratio */
+  /* aspect-ratio: 16 / 9;  */
+  /* 3. Center the inner text using Grid */
+  /* display: grid;
+  place-content: center;  */
+   /* background-position: center; */
+ /* aspect-ratio: 16 / 9; 
+  position: relative; */
+
+}
+
+.sale-promo-collection-header {
+margin-bottom: 200px;
+}
+
+.sale-promo-collection-header h1 {
+/* width: 277px;
+height: 77px; */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+white-space: nowrap;
+color: #FFFFFF;
+}
+
+.sale-promo-collection-title {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+align-items: center;
+padding-left: 12px;
+padding-right: 12px;
+}
+.sale-promo-collection-title h1 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+/* font-size: 96px; */
+font-size: clamp(50px,9.6vw,96px);
+line-height: 116px;
+
+color: #FFFFFF;
+
+
+}
+.sale-promo-collection-btn-container {
+  margin-top: 100px;
+}
+.sale-promo-collection-btn {
+
+box-sizing: border-box;
+width: 218px;
+height: 80.16px;
+border: 2px solid #FFFFFF;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFEFE;
+cursor: pointer;
+}
+
+.sale-promo-collection-btn:hover {
+   border: 0;
+    color: #222831;
+    background-color: #FFFEFE;
+}
+
