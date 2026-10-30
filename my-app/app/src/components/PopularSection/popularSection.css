@@ -124,6 +124,7 @@ opacity: 0.5; */
   background-color: aquamarine; */
 }
 
+/* Make elements inside img background visible by having it infront of the background */
 .popular-products-img-bg .popular-products-img-header, .popular-products-shop-btns-container {
      position: relative;
   z-index: 1; 
@@ -236,7 +237,7 @@ cursor: pointer;
 }
 
 .popular-products-size:hover {
-    border: 0px solid black;
+    border: 1px solid black;
 color: #FFFFFF;
     background-color: #222831;
 }

@@ -135,6 +135,224 @@ color: #000000;
 
 
 
+
+
+
+
+.products-section-container {
+    width: 100%;
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     padding: 60px; 
+     gap: 26px;
+
+     /* background-color: aqua; */
+}
+
+
+.products-section-card {
+max-width: 236px;
+display: grid;
+grid-template-rows: auto 1fr;
+align-items: start;
+/* padding: 4px; */
+gap: 12px;
+/* border: 1px solid black; */
+border-radius: 10px;
+/* background-color: orange; */
+}
+
+.products-section-img-bg {
+width: 100%;
+height: 383px;
+position: relative;
+display: flex;
+flex-direction: column;
+
+/* background: url(IMG_1686.jpg); */
+border-radius: 12px;
+}
+
+.products-section-img-bg::before  {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-image: url(../../../../../public/shirtDD.jpeg);
+  background-size: cover;
+  background-position: center;
+ background-blend-mode: darken;
+  /*Changes ONLY the image transparency */
+  z-index: 0;   /* Keeps it behind the content layer */
+}
+.products-section-img-bg, .products-section-img-header, .products-section-shop-btns-container {
+      position: relative;
+  z-index: 1; 
+}
+.products-section-img-bg:hover::before {
+    filter: brightness(50%);
+  /* opacity: 0.6;  */
+/* opacity property in CSS controls the transparency of an element */
+/* opacity: 0.5; */
+}
+
+.products-section-img-header {
+     padding-top: 12px;
+    padding-right: 16px;
+}
+
+.heart-icon-container {
+width: 33px;
+height: 28px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+background: #FFFFFF;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.andrsrxn--heart-filled {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='black'%3E%3Cpath d='M17.25 3.35c-1.8 0-3.27.9-4.23 1.8c-.55.52-.82.78-1.02.78s-.47-.26-1.02-.78a6.3 6.3 0 0 0-4.23-1.8C3.4 3.35.88 7.17 1.96 11.2c.98 3.67 6.36 6.72 9.25 9.4c.4.38.6.57.79.57s.4-.19.8-.56c2.88-2.69 8.26-5.74 9.24-9.41c1.08-4.04-1.44-7.86-4.79-7.86'/%3E%3Cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M17.22 3.4c-1.79 0-3.24.9-4.2 1.8c-.55.51-.82.77-1.02.77s-.47-.26-1.03-.78a6.2 6.2 0 0 0-4.2-1.79c-3.33 0-5.83 3.8-4.76 7.82c.98 3.65 6.32 6.68 9.2 9.36c.4.37.6.55.79.55s.4-.18.8-.55c2.87-2.68 8.21-5.71 9.19-9.36c1.07-4.02-1.43-7.82-4.77-7.82'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  cursor: pointer;
+}
+
+.heart-icon-container:hover .andrsrxn--heart-filled {
+background-color: red;
+}
+
+.products-section-shop-btns-container {
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.products-section-add-bag-btn {
+    width: 120px;
+height: 50px;
+background: #FFFFFF;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.products-section-buy-now-btn {
+    box-sizing: border-box;
+width: 120px;
+height: 50px;
+border: 2px solid #FFFFFF;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+.products-section-card-details {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 12px;
+}
+
+.products-section-price-container {
+     width: 100%;
+    padding-right: 20px;
+}
+
+.products-section-price-container h1  {
+  margin-left: auto;
+width: 31px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+}
+
+.products-section-titile-container {
+     overflow: hidden;
+}
+
+.products-section-titile-container h1 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+
+.products-section-colors-container , .products-section-sizes-container {
+   display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.products-section-color {
+    width: 20px;
+height: 20px;
+border-radius: 50%;
+background: #C5C0C0;
+cursor: pointer;
+}
+
+.products-section-color:hover {
+       outline: 2px solid #2c3e50; 
+   outline-offset: 2px; 
+}
+
+.products-section-size {
+       width: 23px;
+height: 23px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+border: 2px solid black;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+cursor: pointer;
+}
+
+.products-section-size:hover  {
+      border: 0px solid black;
+color: #FFFFFF;
+    background-color: #222831;
+}
+
+
 @media (max-width: 989px){
 .products-filter-container {
     display: none;

@@ -1,0 +1,218 @@
+.login-wrapper {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 12px;
+    margin-top: 50px;
+}
+
+.login-img {
+width: 400px;
+height: 402px;
+border-radius: 6px;
+object-fit: cover;
+/* background-image: url(../../../../public/ddLogo.jpeg); */
+/* background-repeat: no-repeat;
+background-size: 100% 100%; 
+background-position: center; */
+}
+
+.login-account-container, .signup-account-container {
+  display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 40px;
+}
+
+.login-account-header, .signup-account-header {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+
+
+.login-credentials-container, .signup-credentials-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 6px;
+}
+
+.login-account-container form, .signup-account-container form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.login-credentials-container h2, .signup-credentials-container h2{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+
+
+
+.login-credentials-input, .signup-credentials-input  {
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+box-sizing: border-box;
+width: 301px;
+height: 35px;
+border: 1px solid #978E8E;
+border-radius: 6px;
+padding: 12px
+}
+
+.login-credentials-input input {
+   
+}
+
+.akar-icons--eye {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19s-7.764-4.013-9.257-5.962a1.69 1.69 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5s7.764 4.013 9.257 5.962'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  margin-left: auto;
+}
+
+.forgot-pw-container {
+    /* Parent container has to be in flex for margin auto to work */
+    display: flex;
+}
+
+.forgot-pw-container h2 {
+margin-left: auto;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+cursor: pointer;
+}
+
+.login-btn, .signup-btn {
+
+width: 301px;
+height: 30px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background: #222831;
+border-radius: 5px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.new-user-redirect {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 6px;
+}
+
+.new-user-redirect h1 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.new-user-redirect h2 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight:bold;
+font-size: 16px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+cursor: pointer;
+}
+
+
+.signup-phone-birthday-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+
+.signup-phone-bday-input , #phone-bday-input {
+box-sizing: border-box;
+width: 129px;
+height: 35px;
+border: 1px solid #978E8E;
+border-radius: 6px;;
+}
+
+#phone-bday-input {
+width: 129px;
+padding: 16px;
+font-size: 16px;
+}
+
+@media(max-width: 800px){
+    .login-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .login-img {
+width: 100%;
+height: fit-content;
+}
+}
